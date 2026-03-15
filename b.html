@@ -94,7 +94,7 @@ document.getElementById('leadForm').addEventListener('submit', async function(e)
     submitted: new Date().toISOString()
   };
   try {
-    await fetch('https://hooks.zapier.com/hooks/catch/ZAPIER_HOOK_ID_B/', {
+    await fetch('https://script.google.com/macros/s/AKfycby3D5s4gFIJge3rE-faOp5lMfsNvATRtcfMwGm5Fy5RyqoKNeCFzctrF5Ev-d_LO66H6Q/exec', {
       method: 'POST',
       body: JSON.stringify(data)
     });
